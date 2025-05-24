@@ -43,7 +43,7 @@ class RecipeNERDataset(Dataset):
             self._special_tokens.get("<|end_header_id|>"),
             *self._tokenizer.encode("\n\n", bos=False, eos=False),
         ]
-        target_tokens: List[int] = [IGNORE_TOKEN] * (len(input_tokens) - 1)
+        target_tokens: List[int] = [IGNORE_TOKEN] * (len(input_tokens) - 1)  # only train on assistant msg
 
         assistant_tokens = self._tokenizer.encode(ner, bos=False, eos=False) + [self._special_tokens.get("<|eot_id|>")]
         input_tokens.extend(assistant_tokens)
