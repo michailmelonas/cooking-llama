@@ -17,4 +17,6 @@ def download_weights():
         "/persistent-storage/Llama3.2-1B-Instruct.zip"
     )
     with zipfile.ZipFile("/persistent-storage/Llama3.2-1B-Instruct.zip", "r") as f:
-        f.extractall("/persistent-storage/Llama3.2-1B-Instruct")
+        f.extractall("/persistent-storage/")
+
+    os.remove("/persistent-storage/Llama3.2-1B-Instruct.zip")
