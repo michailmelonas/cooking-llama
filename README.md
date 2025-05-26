@@ -2,7 +2,7 @@
 ##### Fine-tuning Llama-3.2-1B-Instruct on the RecipesNLG dataset
 
 <p align="center">
-  <img src="cooking-llama.png" width="500" />
+  <img src="imgs/cooking-llama.png" width="500" />
 </p>
 
 Following https://cookbook.openai.com/examples/how_to_finetune_chat_models, we fine-tune our own instance of Llama-3.2-1B-Instruct.
@@ -19,7 +19,7 @@ Output:
 ```
 See `./train` and `./inference` for training and inference logic, respectively.
 
-| Training Loss | Validation Loss |
-|:-------------:|:---------------:|
-| ![](step_train_loss.png) | ![](avg_val_loss.png) |
+|         Training Loss         |         Validation Loss          |
+|:-----------------------------:|:--------------------------------:|
+| ![](imgs/step_train_loss.png) | ![](imgs/avg_train_val_loss.png) |
 
