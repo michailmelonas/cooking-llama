@@ -1,0 +1,6 @@
+llama-models==0.2.0
+torch==2.7.0
+torchvision
+fairscale
+termcolor
+blobfile

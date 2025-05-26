@@ -1,0 +1,9 @@
+llama-models==0.2.0
+polars
+torch==2.7.0
+torchvision
+boto3
+fairscale
+termcolor
+blobfile
+wandb
