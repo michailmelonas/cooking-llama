@@ -4,7 +4,6 @@ python_version = "3.11"
 docker_base_image_url = "debian:bookworm-slim"
 disable_auth = false
 include = ["main.py", "cerebrium.toml", "model.py", "dataset.py", "download_weights.py", "train.py"]
-exclude = ["./venv/*"]
 
 [cerebrium.dependencies.paths]
 pip = "requirements.txt"
