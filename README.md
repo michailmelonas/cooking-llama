@@ -2,12 +2,12 @@
 ##### Fine-tuning Llama-3.2-1B-Instruct on the RecipesNLG dataset
 
 <p align="center">
-  <img src="imgs/cooking-llama.png" width="500" />
+  <img src="imgs/cooking-llama.png" width="550" />
 </p>
 
 Following https://cookbook.openai.com/examples/how_to_finetune_chat_models, we fine-tune our own instance of Llama-3.2-1B-Instruct.
 Our approach is purely `torch` based. Model weights were obtained from https://www.llama.com/models/llama-3/.
-We update these weights to specialise in extracting the generic ingredients from a recipe. That is, we train on input-output pairs that look as follows:
+We update these weights to specialise in extracting the generic ingredients from a recipe (i.e. perform a variant of NER). That is, we train on input-output pairs that look as follows:
 ```
 Input:
 Title: 7 Layer Salad
