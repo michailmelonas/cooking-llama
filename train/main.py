@@ -19,6 +19,7 @@ def run(steps: int, batch_size: int):
 
     # load training data and fine-tune weights
     df = pl.read_csv("/persistent-storage/cookbook_recipes_nlg_10k.csv")
+    # todo: implement DDP
     model = get_fine_tuned_model(BASE_CKPT_DIR, df, steps, batch_size, 0.0001, 1)
 
     # save weights
